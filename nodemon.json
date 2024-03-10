@@ -1,0 +1,24 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    "tmp",
+    "scripts",
+    ".github/workflows",
+    ".git",
+    "wire/wire_gen.go"
+  ],
+  "verbose": true,
+  "stdin": false,
+  "watch": [
+    "*.*"
+  ],
+  "env": {
+    "ENV": "local"
+  },
+  "scripts": {
+    "start": "go run ."
+  },
+  "ext": "go, yaml, sh, json",
+  "colours": true,
+  "signal": "SIGTERM"
+}
